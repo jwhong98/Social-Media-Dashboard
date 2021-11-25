@@ -1,17 +1,17 @@
 import React from 'react'
 import { OverviewBoxContainer, OverviewBoxHeader, OverviewBoxWrapper, Subject, Icon, OverviewBoxStats, Stats, Change } from './OverviewBoxElements';
 
-const OverviewBox = () => {
+const OverviewBox = (props) => {
     return (
         <OverviewBoxContainer>
             <OverviewBoxWrapper>
                 <OverviewBoxHeader>
-                    <Subject>Page Views</Subject>
-                    <Icon></Icon>
+                    <Subject>{props.label}</Subject>
+                    <Icon src={props.img} ></Icon>
                 </OverviewBoxHeader>
                 <OverviewBoxStats>
-                    <Stats>87</Stats>
-                    <Change>3%</Change>
+                    <Stats>{props.count}</Stats>
+                    <Change positiveChange={props.positiveChange}>{props.percentChange}%</Change>
                 </OverviewBoxStats>
             </OverviewBoxWrapper>
         </OverviewBoxContainer>

@@ -3,12 +3,12 @@ import { FollowBoxContainer, FollowBoxWrapper, FollowMedia, FollowCount, FollowL
 
 const FollowBox = (props) => {
     return (
-        <FollowBoxContainer>
+        <FollowBoxContainer color={props.color}>
             <FollowBoxWrapper>
-                <FollowMedia>@nathanF</FollowMedia>
-                <FollowCount>1987</FollowCount>
-                <FollowLabel>FOLLOWERS</FollowLabel>
-                <FollowChange>12 Today</FollowChange>
+                <FollowMedia>{props.username}</FollowMedia>
+                <FollowCount>{props.count}</FollowCount>
+                <FollowLabel>{props.label}</FollowLabel>
+                <FollowChange positiveChange={props.positiveChange}>{props.change} Today</FollowChange>
             </FollowBoxWrapper>
         </FollowBoxContainer>
     )

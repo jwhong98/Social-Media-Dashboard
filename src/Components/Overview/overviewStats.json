@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "label": "Page Views",
+        "icon": "./images/icon-facebook.svg",
+        "count": 87,
+        "positiveChange": true,
+        "percentChange": 3
+    },
+    {
+        "id": 2,
+        "label": "Likes",
+        "icon": "../../images/icon-facebook.svg",
+        "count": 52,
+        "positiveChange": false,
+        "percentChange": 2
+    },
+    {
+        "id": 3,
+        "label": "Likes",
+        "icon": "../../images/icon-instagram.svg",
+        "count": 5462,
+        "positiveChange": true,
+        "percentChange": 2257
+    },
+    {
+        "id": 4,
+        "label": "Profile Views",
+        "icon": "../../images/icon-instagram.svg",
+        "count": "52k",
+        "positiveChange": true,
+        "percentChange": 1375
+    },
+    {
+        "id": 5,
+        "label": "Retweets",
+        "icon": "../../images/icon-twitter.svg",
+        "count": 117,
+        "positiveChange": true,
+        "percentChange": 303
+    },
+    {
+        "id": 6,
+        "label": "Likes",
+        "icon": "../../images/icon-twitter.svg",
+        "count": 507,
+        "positiveChange": true,
+        "percentChange": 553
+    },
+    {
+        "id": 7,
+        "label": "Likes",
+        "icon": "../../images/icon-youtube.svg",
+        "count": 107,
+        "positiveChange": false,
+        "percentChange": 19
+    },
+    {
+        "id": 8,
+        "label": "Total Views",
+        "icon": "../../images/icon-youtube.svg",
+        "count": 1407,
+        "positiveChange": false,
+        "percentChange": 12
+    }
+]
