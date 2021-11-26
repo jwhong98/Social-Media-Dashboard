@@ -3,6 +3,7 @@ import FollowBox from '../FollowBox';
 import { FollowContainer, FollowWrapper, FollowHeader, HeaderTextWrap, FollowTitle, FollowSubTitle, Toggle,
 ToggleSubTitle, ToggleButton, FollowBody } from './FollowersElements';
 import data from './followerData.json';
+import Switch from '@mui/material/Switch';
 
 const Followers = () => {
 
@@ -10,11 +11,13 @@ const Followers = () => {
         return (
             <FollowBox 
                 key={info.id}
+                icon={info.icon}
                 username={info.username}
                 color={info.color}
                 count={info.count}
                 label={info.label}
                 positiveChange={info.positiveChange}
+                changeIcon={info.changeIcon}
                 change={info.change}
             />
         )
@@ -29,7 +32,7 @@ const Followers = () => {
                     </HeaderTextWrap>
                     <Toggle>
                         <ToggleSubTitle>Dark Mode</ToggleSubTitle>
-                        <ToggleButton></ToggleButton>
+                        <Switch />
                     </Toggle>
                 </FollowHeader>
                 <FollowBody>

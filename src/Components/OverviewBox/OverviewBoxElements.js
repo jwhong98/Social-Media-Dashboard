@@ -40,6 +40,15 @@ export const Stats = styled.h1`
     color: hsl(230, 17%, 14%);
 `;
 
+export const ChangeWrap = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const ChangeIcon = styled.img`
+    margin-right: 3px;
+`;
+
 export const Change = styled.p`
 font-weight: 700;
     color: ${props => (props.positiveChange ? 'hsl(163, 72%, 41%)' : 'hsl(356, 69%, 56%)')};

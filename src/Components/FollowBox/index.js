@@ -1,14 +1,20 @@
 import React from 'react'
-import { FollowBoxContainer, FollowBoxWrapper, FollowMedia, FollowCount, FollowLabel, FollowChange } from './FollowBoxElements';
+import { FollowBoxContainer, FollowBoxWrapper, FollowHead, FollowMedia, FollowIcon, FollowCount, FollowLabel, FollowChangeIcon, FollowChange } from './FollowBoxElements';
 
 const FollowBox = (props) => {
     return (
         <FollowBoxContainer color={props.color}>
             <FollowBoxWrapper>
-                <FollowMedia>{props.username}</FollowMedia>
+                <FollowHead>
+                    <FollowIcon src={props.icon} />
+                    <FollowMedia>{props.username}</FollowMedia>
+                </FollowHead>
                 <FollowCount>{props.count}</FollowCount>
                 <FollowLabel>{props.label}</FollowLabel>
-                <FollowChange positiveChange={props.positiveChange}>{props.change} Today</FollowChange>
+                <FollowHead>
+                    <FollowChangeIcon src={props.changeIcon} />
+                    <FollowChange positiveChange={props.positiveChange}>{props.change} Today</FollowChange>
+                </FollowHead>
             </FollowBoxWrapper>
         </FollowBoxContainer>
     )

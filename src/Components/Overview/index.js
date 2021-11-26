@@ -13,6 +13,7 @@ const Overview = () => {
                 icon={stats.icon}
                 count={stats.count}
                 positiveChange={stats.positiveChange}
+                changeIcon={stats.changeIcon}
                 percentChange={stats.percentChange}
             />
         )
