@@ -1,6 +1,6 @@
 import React from 'react'
 import OverviewBox from '../OverviewBox';
-import { OverviewContainer, OverviewWrapper, OverviewHeader } from './OverViewElements';
+import { OverviewContainer, OverviewWrapper, OverviewHeader, OverviewBody } from './OverViewElements';
 import data from './overviewStats.json';
 
 const Overview = () => {
@@ -22,7 +22,9 @@ const Overview = () => {
         <OverviewContainer>
             <OverviewWrapper>
                 <OverviewHeader>Overview - Today</OverviewHeader>
-                {data.map(createBox)}
+                <OverviewBody>
+                    {data.map(createBox)}
+                </OverviewBody>
             </OverviewWrapper>
         </OverviewContainer>
     )

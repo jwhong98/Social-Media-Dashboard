@@ -7,6 +7,11 @@ export const FollowBoxContainer = styled.div`
     border-radius: 5px;
     border-top: 5px solid ${props => props.color};
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 640px) {
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
 `;
 
 export const FollowBoxWrapper = styled.div`

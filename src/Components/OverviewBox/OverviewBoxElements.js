@@ -7,6 +7,10 @@ export const OverviewBoxContainer = styled.div`
     border-radius: 5px;
     padding: 2rem;
     margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 640px) {
+        margin-bottom: 0;
+    }
 `;
 
 export const OverviewBoxWrapper = styled.div`
