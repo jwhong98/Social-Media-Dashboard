@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FollowBox from '../FollowBox';
 import { FollowContainer, FollowWrapper, FollowHeader, HeaderTextWrap, FollowTitle, FollowSubTitle, Toggle,
-ToggleSubTitle, FollowBody } from './FollowersElements';
+ToggleSubTitle, FollowBody, FollowFooter, FooterText, FooterLink } from './FollowersElements';
 import data from './followerData.json';
 import Switch from '@mui/material/Switch';
 import Overview from '../Overview';
@@ -48,6 +48,14 @@ const Followers = () => {
                 </FollowBody>
             </FollowWrapper>
             <Overview dark={dark}/>
+            <FollowFooter>
+                <FooterText dark={dark}>
+                Challenge by 
+                <FooterLink href="https://www.frontendmentor.io?ref=challenge" target="_blank" dark={dark}> Frontend Mentor</FooterLink>. 
+                Coded by 
+                <FooterLink href="#" dark={dark}> Jaewon Hong</FooterLink>.
+                </FooterText>
+            </FollowFooter>
         </FollowContainer>
     )
 }

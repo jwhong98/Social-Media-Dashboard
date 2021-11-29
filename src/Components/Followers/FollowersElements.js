@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FollowContainer = styled.div`
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 2rem;
     background: ${props => props.dark ? "hsl(230, 17%, 14%)" : "hsl(0, 0%, 100%)"};
     
@@ -94,4 +94,17 @@ export const FollowBody = styled.div`
         align-items: unset;
         gap: 2rem;
     }
+`;
+
+export const FollowFooter = styled.footer`
+    width: 100%;
+`;
+
+export const FooterText = styled.p`
+    color: ${props => props.dark ? "hsl(228, 34%, 66%)" : "hsl(228, 12%, 44%)"};
+`;
+
+export const FooterLink = styled.a`
+    color: ${props => props.dark ? "#1976D2" : "#0000EE"};
+    text-decoration: none;
 `;
