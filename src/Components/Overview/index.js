@@ -1,4 +1,3 @@
-import { getThemeProps } from '@mui/system';
 import React from 'react'
 import OverviewBox from '../OverviewBox';
 import { OverviewContainer, OverviewWrapper, OverviewHeader, OverviewBody } from './OverViewElements';
