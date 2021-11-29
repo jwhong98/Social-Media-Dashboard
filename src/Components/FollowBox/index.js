@@ -3,14 +3,14 @@ import { FollowBoxContainer, FollowBoxWrapper, FollowHead, FollowMedia, FollowIc
 
 const FollowBox = (props) => {
     return (
-        <FollowBoxContainer color={props.color}>
+        <FollowBoxContainer color={props.color} dark={props.dark}>
             <FollowBoxWrapper>
                 <FollowHead>
                     <FollowIcon src={props.icon} />
-                    <FollowMedia>{props.username}</FollowMedia>
+                    <FollowMedia dark={props.dark}>{props.username}</FollowMedia>
                 </FollowHead>
-                <FollowCount>{props.count}</FollowCount>
-                <FollowLabel>{props.label}</FollowLabel>
+                <FollowCount dark={props.dark}>{props.count}</FollowCount>
+                <FollowLabel dark={props.dark}>{props.label}</FollowLabel>
                 <FollowHead>
                     <FollowChangeIcon src={props.changeIcon} />
                     <FollowChange positiveChange={props.positiveChange}>{props.change} Today</FollowChange>

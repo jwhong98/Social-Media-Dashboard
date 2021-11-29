@@ -1,9 +1,10 @@
+import { getThemeProps } from '@mui/system';
 import React from 'react'
 import OverviewBox from '../OverviewBox';
 import { OverviewContainer, OverviewWrapper, OverviewHeader, OverviewBody } from './OverViewElements';
 import data from './overviewStats.json';
 
-const Overview = () => {
+const Overview = (dark) => {
 
     const createBox = (stats) => {
         return (
@@ -15,13 +16,14 @@ const Overview = () => {
                 positiveChange={stats.positiveChange}
                 changeIcon={stats.changeIcon}
                 percentChange={stats.percentChange}
+                dark={dark.dark}
             />
         )
     }
     return (
         <OverviewContainer>
             <OverviewWrapper>
-                <OverviewHeader>Overview - Today</OverviewHeader>
+                <OverviewHeader dark={dark.dark}>Overview - Today</OverviewHeader>
                 <OverviewBody>
                     {data.map(createBox)}
                 </OverviewBody>

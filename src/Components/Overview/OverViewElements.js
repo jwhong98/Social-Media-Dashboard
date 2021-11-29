@@ -25,7 +25,7 @@ export const OverviewWrapper = styled.div`
 `;
 
 export const OverviewHeader = styled.h1`
-    color: hsl(228, 12%, 44%);
+    color: ${({dark}) => (dark ? 'hsl(228, 34%, 66%)' : 'hsl(228, 12%, 44%)')};
     margin-bottom: 2rem;
 
     @media screen and (min-width: 640px) {

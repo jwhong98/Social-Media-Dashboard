@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FollowBoxContainer = styled.div`
     width: 100%;
     display: flex;
-    background-color: hsl(227, 47%, 96%);
+    background: ${({dark}) => (dark ? 'hsl(228, 28%, 20%)' : 'hsl(227, 47%, 96%)')};
     border-radius: 5px;
     border-top: 5px solid ${props => props.color};
     margin-bottom: 2rem;
@@ -32,7 +32,7 @@ export const FollowHead = styled.div`
 
 export const FollowMedia = styled.p`
     font-weight: 700;
-    color: hsl(228, 12%, 44%)
+    color: ${({dark}) => (dark ? 'hsl(228, 34%, 66%)' : 'hsl(228, 12%, 44%)')};
 `;
 
 export const FollowIcon = styled.img`
@@ -41,11 +41,15 @@ export const FollowIcon = styled.img`
 
 export const FollowCount = styled.h1`
     margin-bottom: 0.5rem;
-    color: hsl(230, 17%, 14%);
+    color: ${({dark}) => (dark ? 'hsl(0, 0%, 100%)' : 'hsl(230, 17%, 14%)')};
+
+    @media screen and (min-width: 640px){
+        font-size: 4rem;
+    }
 `;
 
 export const FollowLabel = styled.p`
-    color: hsl(228, 12%, 44%);
+    color: ${({dark}) => (dark ? 'hsl(228, 34%, 66%)' : 'hsl(228, 12%, 44%)')};
     text-transform: uppercase;
     letter-spacing: 3px;
 `;

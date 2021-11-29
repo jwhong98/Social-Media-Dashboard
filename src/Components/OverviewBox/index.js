@@ -4,14 +4,14 @@ import { OverviewBoxContainer, OverviewBoxHeader, OverviewBoxWrapper, Subject, I
 
 const OverviewBox = (props) => {
     return (
-        <OverviewBoxContainer>
+        <OverviewBoxContainer dark={props.dark}>
             <OverviewBoxWrapper>
                 <OverviewBoxHeader>
-                    <Subject>{props.label}</Subject>
+                    <Subject dark={props.dark}>{props.label}</Subject>
                     <Icon src={props.icon} ></Icon>
                 </OverviewBoxHeader>
                 <OverviewBoxStats>
-                    <Stats>{props.count}</Stats>
+                    <Stats dark={props.dark}>{props.count}</Stats>
                     <ChangeWrap>
                         <ChangeIcon src={props.changeIcon} />
                         <Change positiveChange={props.positiveChange}>{props.percentChange}%</Change>
